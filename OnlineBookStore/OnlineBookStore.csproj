@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8681720-1C9B-4D66-AA0B-3F15621385D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineBookStore</RootNamespace>
+    <AssemblyName>OnlineBookStore</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BookInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\BookInfo.Designer.cs">
+      <DependentUpon>BookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\NewBook.Designer.cs">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\Biography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\Biography.Designer.cs">
+      <DependentUpon>Biography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_page.Designer.cs">
+      <DependentUpon>Home_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpValues.cs" />
+    <Compile Include="Books\Kids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\Kids.Designer.cs">
+      <DependentUpon>Kids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading_screen.Designer.cs">
+      <DependentUpon>Loading_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInfoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logo.Designer.cs">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\Motivational_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\Motivational_Page.Designer.cs">
+      <DependentUpon>Motivational_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_user.Designer.cs">
+      <DependentUpon>New_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\Programming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\Programming.Designer.cs">
+      <DependentUpon>Programming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Books\Religious.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Books\Religious.Designer.cs">
+      <DependentUpon>Religious.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\text_effect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\text_effect.Designer.cs">
+      <DependentUpon>text_effect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface.Designer.cs">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Details.Designer.cs">
+      <DependentUpon>User_Details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\BookInfo.resx">
+      <DependentUpon>BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\NewBook.resx">
+      <DependentUpon>NewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\Biography.resx">
+      <DependentUpon>Biography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_page.resx">
+      <DependentUpon>Home_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\Kids.resx">
+      <DependentUpon>Kids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading_screen.resx">
+      <DependentUpon>Loading_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logo.resx">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\Motivational_Page.resx">
+      <DependentUpon>Motivational_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_user.resx">
+      <DependentUpon>New_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\Programming.resx">
+      <DependentUpon>Programming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Books\Religious.resx">
+      <DependentUpon>Religious.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\text_effect.resx">
+      <DependentUpon>text_effect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface.resx">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Details.resx">
+      <DependentUpon>User_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginInfoDataSet.xsc">
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginInfoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginInfoDataSet.xss">
+      <DependentUpon>LoginInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.53 PM %281%291.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 8.07.44 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.47 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.46 PM %281%291.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.46 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.45 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 7.49.19 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.44 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.43 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 7.56.29 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 9.56.58 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 7.46.38 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 7.42.33 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.53 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.55 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.39 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.56 PM3.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.40 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.40 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.56 PM2.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.56 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.56 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.44 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.49 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.51 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.54 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.51 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.52 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.50 PM %281%291.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.50 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.50 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.52 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.41 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.40 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.41 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.41 PM %282%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.42 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.34.43 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.49 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.48 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.48 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.48 PM %282%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.47 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.40 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.53 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.46 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 4.19.45 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 2.28.28 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 9.04.31 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 8.55.10 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 8.56.14 PM.jpeg" />
+    <None Include="Resources\logout2.png" />
+    <None Include="Resources\logout1.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\WhatsApp Image 2022-05-21 at 3.38.34 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-20 at 8.36.14 PM.jpeg" />
+    <None Include="Resources\wallpaper2you_2319561.jpg" />
+    <None Include="Resources\wallpaper2you_231956.jpg" />
+    <None Include="Resources\wallpaper2you_231931.jpg" />
+    <None Include="Resources\bg4.jpg" />
+    <None Include="Resources\bg3.jpg" />
+    <None Include="Resources\rd2.jpg" />
+    <None Include="Resources\rd1.jpg" />
+    <None Include="Resources\rd.jpg" />
+    <None Include="Resources\bg2.jpg" />
+    <None Include="Resources\WhatsApp Image 2022-05-18 at 2.57.17 PM.jpeg" />
+    <None Include="Resources\photo-1533035353720-f1c6a75cd8ab.jpg" />
+    <None Include="Resources\bg2.jpeg" />
+    <None Include="Resources\UserInterface.jpeg" />
+    <None Include="Resources\wp3903799.jpg" />
+    <None Include="Resources\account_circle_full_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\keyboard_return_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\person_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\bg main.jpg" />
+    <None Include="Resources\menu_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\shopping_cart_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 4.33.15 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.52.52 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 4.33.20 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 4.33.20 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.43 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 4.35.18 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.52.32 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.41 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.33 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.32 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.32 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.31 PM %281%29.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.31 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.30 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 3.44.28 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-05-24 at 1.59.02 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

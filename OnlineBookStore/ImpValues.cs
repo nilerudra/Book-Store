@@ -30,6 +30,7 @@ namespace OnlineBookStore
             return int.Parse(dt.Rows[0].ItemArray[0].ToString());
         }*/
 
+
         public static DataTable getBookInfo(string book_type)
         {
             Connect c = new Connect();
